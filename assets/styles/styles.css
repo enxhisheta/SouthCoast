@@ -9,7 +9,8 @@
     padding: 0;
     overflow-x: hidden;
     position: relative; 
-}
+
+  }
 
 .header-content {
     background:#1E55B3 ;
@@ -306,8 +307,6 @@ p {
 }
 
 
-/* book cards */
-
 .tour-cards {
     display: flex;
     flex-direction: column;
@@ -329,7 +328,7 @@ p {
 }
 
 .card:hover p {
-    transform: translateX(0); /* Add this line to reset the horizontal translation on hover */
+    transform: translateX(0); 
 }
 
 .card:hover {
@@ -350,7 +349,7 @@ p {
 }
 
 .book-now-button {
-    background-color: #ff781ef5;
+    background-color: #ff585f;
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -362,5 +361,44 @@ p {
 }
 
 .book-now-button:hover {
-    background-color: #ffab4c;
+    background-color:  #ff1b26;
+    text-emphasis-color: #fff;
+}
+
+.background-image {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transparent-card {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 60px; 
+    border-radius: 8px;
+    width: 100%; 
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+
+.form-group label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
