@@ -26,25 +26,26 @@
     </header>
 
     <div class="background-image">
-       
-        <div class="tour-cards">
-            <div class="card transparent-card">
+            <div class="transparent-card">
                 <div class="tour-info">
                     <h2>Select a Trip</h2>
-                    <form>
-                        <div class="form-group">
+                    <form id = "book-form">
+                        <div>
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
+                            <span id="nameSpn"></span>
+
                         </div>
-                        <div class="form-group">
+                        <div>
                             <label for="surname">Surname</label>
                             <input type="text" id="surname" name="surname" required>
+                            <span id="surnameSpn"></span>
                         </div>
-                        <div class="form-group">
+                        <div>
                             <label for="dates">Dates</label>
                             <input type="date" id="dates" name="dates" required>
                         </div>
-                        <div class="form-group">
+                        <div>
                             <label for="trip">Select a Trip</label>
                             <select id="trip" name="trip" required>
                                 <option value="trip1">Pirates' cave</option>
@@ -54,30 +55,36 @@
                                 <option value="trip5">Tongo island</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div>
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
+                            <span id="emailSpn"></span>
+
                         </div>
-                        <div class="form-group">
+                        <div>
                             <label for="phone">Phone Number</label>
                             <input type="tel" id="phone" name="phone" required>
+                            <span id="phoneSpn"></span>
                         </div>
                         
                        
-                        <div class="form-group">
+                        <div>
                             <label for="adults">Number of Adults</label>
                             <input type="number" id="adults" name="adults" required>
+                            <span id="noAdultsSpn"></span>
+
                         </div>
-                        <div class="form-group">
+                        <div>
                             <label for="kids">Number of Kids(under 13)</label>
                             <input type="number" id="kids" name="kids" required>
+                            <span id="noKidsSpn"></span>
+
                         </div>
-                        <button type="submit" class="book-now-button">Book Now</button>
+                        <button id = "bookBtn">Book Now</button>
                         
                     </form>
                 </div>
             </div>
-        </div>
     </div>
 
     <footer>
@@ -86,5 +93,8 @@
             <p>All rights reserved</p>
             </div>
     </footer>
+
+    <script src="assets/scripts/formValidation.js"></script>
+
 </body>
 </html>
