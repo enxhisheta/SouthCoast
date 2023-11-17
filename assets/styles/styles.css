@@ -357,12 +357,11 @@ p {
     cursor: pointer;
     font-size: 14px;
     align-self: center;
-    transition: background-color 0.3s ease-in-out;
+    transition:  background 0.3s ease-in-out;
 }
 
 .book-now-button:hover {
-    background-color:  #ff1b26;
-    text-emphasis-color: #fff;
+    background:  #faa4a7;
 }
 
 .background-image {
@@ -382,23 +381,51 @@ p {
     border-radius: 8px;
     width: 100%; 
     max-width: 500px; 
-    margin: 0 auto; 
 }
 
-.form-group {
+#book-form {
     margin-bottom: 5px;
 }
 
 
-.form-group label {
+#book-form label {
     display: block; 
     margin-bottom: 5px; 
 }
 
-.form-group input, 
-.form-group select {
+#book-form input, 
+#book-form select {
     width: 100%; 
     padding: 10px; 
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+#book-form span{
+    width: 100%; 
+    padding: 10px;
+    color: red;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+#book-form div{
+    margin-bottom: 20px;
+
+}
+
+#bookBtn{
+    background-color: #ff585f;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: center;
+    transition:  background 0.3s ease-in-out;
+}
+
+#bookBtn:hover {
+    background:  #faa4a7;
 }
