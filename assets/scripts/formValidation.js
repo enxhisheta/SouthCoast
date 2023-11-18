@@ -3,50 +3,50 @@ function validateAndSubmit(event){
 
     var isValidated = true;
 
-    document.getElementById("nameSpn").innerHTML = "";
-    document.getElementById("surnameSpn").innerHTML = "";
-    document.getElementById("emailSpn").innerHTML = "";
-    document.getElementById("phoneSpn").innerHTML = "";
-    document.getElementById("noAdultsSpn").innerHTML = "";
-    document.getElementById("noKidsSpn").innerHTML = "";
+    $("#nameSpn").html("");
+    $("#surnameSpn").html("");
+    $("#emailSpn").html("");
+    $("#phoneSpn").html("");
+    $("#noAdultsSpn").html("");
+    $("#noKidsSpn").html("");
 
 
-    const name = document.getElementById("name").value;
-    const surname = document.getElementById("surname").value;
-    const email = document.getElementById("email").value;
-    const phoneNumber = document.getElementById("phone").value;
-    const noAdults = parseInt(document.getElementById("adults").value);
-    const noKids = parseInt(document.getElementById("kids").value);
+    const name = $("#name").val();
+    const surname = $("#surname").val();
+    const email = $("#email").val();
+    const phoneNumber = $("#phone").val();
+    const noAdults = $("#adults").val();
+    const noKids = $("#kids").val();
 
 
     if(name.length < 2){
-        document.getElementById("nameSpn").innerHTML = "Name must contain at least 2 characters";
+        $("#nameSpn").html("Name must contain at least 2 characters");
         isValidated = false;
     }
 
     if(surname.length < 2){
-        document.getElementById("surnameSpn").innerHTML = "Surname must contain at least 2 characters";
+        $("#surnameSpn").html("Surname must contain at least 2 characters");
         isValidated = false;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if(!emailRegex.test(email)){
-        document.getElementById("emailSpn").innerHTML = "Enter a valid email";
+        $("#emailSpn").html("Enter a valid email address");
         isValidated = false;
     }
 
     const phoneRegex = /^[0-9]{10}$/;
         if (!phoneRegex.test(phoneNumber)) {
-            document.getElementById("phoneSpn").innerHTML = "Enter a valid 10-digit phone number.";
+            $("#phoneSpn").html("Enter 10-digit phone number");
         }
 
     if(noAdults < 1){
-        document.getElementById("noAdultsSpn").innerHTML = "Enter at least 1 adult";
+        $("#noAdultsSpn").html("Enter at least 1 adult");;
         isValidated = false;
     }
     else if(noAdults + noKids > 10){
-        document.getElementById("noAdultsSpn").innerHTML = "The maximum capacity is 10 people";
-        document.getElementById("noKidsSpn").innerHTML = "The maximum capacity is 10 people";
+        $("#noAdultsSpn").html("The maximum capacity is 10 people");
+        $("#noKidsSpn").html("The maximum capacity is 10 people");
         isValidated = false;
     }
 
@@ -57,9 +57,6 @@ function validateAndSubmit(event){
 
 }
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const bookNowBtn = document.getElementById("bookBtn")
-    if(bookNowBtn){
-        bookNowBtn.addEventListener("click", validateAndSubmit)
-    }
+$(document).ready(function(){
+    $("#bookBtn").click(validateAndSubmit)
 })
