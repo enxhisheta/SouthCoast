@@ -87,17 +87,16 @@ function handleSubmit(_name, _surname, _email, _date, _phoneNumber, _trip, _depa
 
     //Retreive items from localstorage
     var bookings = JSON.parse(localStorage.getItem('bookings')) || []; 
-    // if no items 
-    //in localstorage, return empty array
+    // if no items in localstorage, return empty array
 
     
-    //Add order to existingOrders array
+    //Add order to bookings array
     bookings.push(newBooking);
 
     //Update localstorage with new items
-    localStorage.setItem('bookings', JSON.stringify(bookings)); //strngify e kthen ne string prap
+    localStorage.setItem('bookings', JSON.stringify(bookings)); //stringify e kthen ne string prap
 
-    alert('Order added to localstorage'); 
+    alert('Booking confirmed'); 
 }
 
      $(document).ready(function(){

@@ -8,7 +8,7 @@ $(document).ready(function() {
     function createBookingCard() {
         $.each(bookings, function (index, booking) {
             const bookingCard = `
-                <div class="booking-card">
+                 <div class="booking-card">
                     <p>Name: ${booking.name}</p>
                     <p>Surname: ${booking.surname}</p>
                     <p>Email: ${booking.email}</p>
@@ -17,7 +17,7 @@ $(document).ready(function() {
                     <p>Number of Kids: ${booking.noKids}</p>
                     <p>Selected Trip: ${booking.trip}</p>
                     <p>Selected Departure: ${booking.departure}</p>
-                    <button class="delete-booking" data-id="${index}">Delete Booking</button>
+                    <button class="delete-booking" data-id="${index}">Cancel Booking</button>
                 </div>`;
             bookingsContainer.append(bookingCard);
         });
