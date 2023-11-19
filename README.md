@@ -9,12 +9,15 @@ This repository hosts a webpage dedicated to showcasing the picturesque beauty, 
 Features
 
 Discover Hidden Gems: Uncover lesser-known spots and off-the-beaten-path locations that capture the essence of the South Coast.
+
 Explore Stunning Coastlines: Dive into breathtaking views and explore the diverse coastal landscapes that adorn the region.
+
 Immerse into some local trips: Learn about the gems that make the South Riviera unique.
 
 How to Use
 
 Accessing the Webpage: Simply visit South Coast Albania to start exploring!
+
 Contributing: Feel free to contribute by suggesting edits, adding new content, or sharing your experiences.
 Contributors
 
