@@ -28,7 +28,7 @@
     <div class="background-image">
             <div class="transparent-card">
                 <div class="tour-info">
-                    <h2>Select a Trip</h2>
+                    <h2>Book Trip</h2>
                     <form id = "book-form">
                         <div>
                             <label for="name">Name</label>
@@ -48,12 +48,21 @@
                         <div>
                             <label for="trip">Select a Trip</label>
                             <select id="trip" name="trip" required>
-                                <option value="trip1">Pirates' cave</option>
-                                <option value="trip2">Karaburun peninsula</option>
-                                <option value="trip3">Grama Bay</option>
-                                <option value="trip4">Saranda tour</option>
-                                <option value="trip5">Tongo island</option>
+                                <option value="Pirates' cave">Pirates' cave</option>
+                                <option value="Karaburun peninsula">Karaburun peninsula</option>
+                                <option value="Grama Bay">Grama Bay</option>
+                                <option value="Saranda tour">Saranda tour</option>
+                                <option value="Tongo island">Tongo island</option>
                             </select>
+                        </div>
+                        <div>
+                            <label for="tripDeparture">Departure</label>
+                               <select id="tripDeparture" name="tripDeparture" required>
+                                  <option value="10:00">10:00</option>
+                                  <option value="11:00">11:00</option>
+                                  <option value="12:00">12:00</option>
+                                  <option value="13:00">13:00</option>
+                                </select>
                         </div>
                         <div>
                             <label for="email">Email</label>
@@ -96,6 +105,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/scripts/formValidation.js"></script>
+    <script src="assets/scripts/setTripFromURL.js"></script>
 
 </body>
 </html>
