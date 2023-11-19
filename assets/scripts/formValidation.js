@@ -25,6 +25,7 @@ function validateAndSubmit(event){
     const noKids = parseInt($("#kids").val());
 
 
+
     if(name.length < 2){
         $("#nameSpn").html("Name must contain at least 2 characters");
         isValidated = false;
@@ -41,11 +42,6 @@ function validateAndSubmit(event){
         isValidated = false;
     }
 
-    const dateRegex = /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/;
-    if(!dateRegex.test(date)){
-        $("#dateSpn").html("Enter a valid date");
-        isValidated = false;
-    }
 
     const phoneRegex = /^[0-9]{10}$/;
     if (!phoneRegex.test(phoneNumber)) {
@@ -63,10 +59,10 @@ function validateAndSubmit(event){
         isValidated = false;
     }
 
-    if(isValidated == false)
-    {
-        return 
+    if (!isValidated) {
+        return;
     }
+
 
     handleSubmit(name, surname, email, date, phoneNumber, trip, departure, noAdults, noKids);
 }
@@ -90,9 +86,11 @@ function handleSubmit(_name, _surname, _email, _date, _phoneNumber, _trip, _depa
     console.log('newBooking Object = ', newBooking);
 
     //Retreive items from localstorage
-    var bookings = JSON.parse(localStorage.getItem('bookings')) || []; // if no items 
+    var bookings = JSON.parse(localStorage.getItem('bookings')) || []; 
+    // if no items 
     //in localstorage, return empty array
 
+    
     //Add order to existingOrders array
     bookings.push(newBooking);
 
@@ -102,6 +100,6 @@ function handleSubmit(_name, _surname, _email, _date, _phoneNumber, _trip, _depa
     alert('Order added to localstorage'); 
 }
 
-$(document).ready(function(){
-    $("#bookBtn").click(validateAndSubmit)
-})
+     $(document).ready(function(){
+        $("#bookBtn").click(validateAndSubmit)
+    })

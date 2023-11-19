@@ -23,14 +23,13 @@ $(document).ready(function() {
         });
     }
 
+    createBookingCard();
+
     // Function to update the view after deleting a booking
     function updateView() {
         bookingsContainer.empty();
         createBookingCard();
     }
-
-    // Initial generation of booking cards
-    createBookingCard();
 
     // Event listener for delete button
     bookingsContainer.on('click', '.delete-booking', function() {
