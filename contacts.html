@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore The South Coast of Albania</title>
     <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -24,26 +28,37 @@
             </nav>
            </div>
     </header>
-    <div class="background-image">
-        <div class="contact-form">
-            <div class="transparent-card">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="book-now-button">Send Message</button>
-            </div>
-        </div>
-    </div>
 
+    <div class="background-image">
+        <div class="formBox">
+            <h2>Contact Us</h2>
+            <p>You will hear from us at the earliest!</p>
+            <form action="#">
+                <div class="nameInp">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" placeholder="Full Name" name="name" id="name" required>
+        
+                </div>
+                <div class="mailInp">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="mail" id="mail" placeholder="Email" required>
+                </div>
+                <div class="phoneInp">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="number" name="phone" id="phone" placeholder="Phone" min="100000" max="9999999999" required>
+                </div>
+                <div class="queryInp">
+                    <textarea name="query" id="query" cols="30" rows="5"
+                        placeholder="Your message..." ></textarea>
+                </div>
+                <div class="submitBtn">
+                    <button id="btn" onclick="notif()">Send</button>
+                </div>
+            </form>
+            <p class="extra">Thank you for choosing us!</p>
+        </div>
+        
+    </div>
 
     <footer>
         <div class="footer-content">
