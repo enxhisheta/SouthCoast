@@ -1,8 +1,30 @@
 
 $(document).ready(function() {
-    var bookings = JSON.parse(localStorage.getItem('bookings')) || [];
+    var bookings = [];
     const bookingsContainer = $("#bookingsContainer");
     bookingsContainer.empty();
+
+    //Request orders data from the api endpoint
+    const settings = {
+    async: true,
+    crossDomain: true,
+    url: 'http://localhost:7000/api/Bookings/createBooking',
+    method: 'GET',
+    headers: {
+        'content-type': 'application/json'
+    }
+};
+
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+
+    bookings = response;
+
+    console.log('Orders (after request response) = ', orders);
+
+    createBookingCard();
+});
 
     // Function to create booking cards
     function createBookingCard() {
