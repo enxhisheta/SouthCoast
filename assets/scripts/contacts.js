@@ -72,5 +72,5 @@ $.ajax(settings).done(function () {
 
 
 $(document).ready(function () {
-    $("#btn").click(validateAndSubmit);
+    $("#contactsBtn").click(validateAndSubmit);
 });
