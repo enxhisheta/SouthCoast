@@ -106,7 +106,7 @@ function handleSubmit(_name, _surname, _email, _date, _phoneNumber, _trip, _depa
 
     $.ajax(settings).done(function () {
         alert('Booking confirmed!');
-    });
+    });;
 }
 
 
