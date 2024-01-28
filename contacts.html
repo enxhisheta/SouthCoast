@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,27 @@
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <link rel="stylesheet" href="./assets/styles/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <div class="header-content">
             <div class="logo-container">
-               <a href="index.html">
-                   <img src="./assets/images/logo/south-coast-albania-high-resolution-logo-white-transparent.png" >
-                 </a>
+                <a href="index.html">
+                    <img src="./assets/images/logo/south-coast-albania-high-resolution-logo-white-transparent.png">
+                </a>
             </div>
             <nav>
-               <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="bookTrips.html">Book a trip</a></li>
-                   <li><a href="myBookings.html">My Bookings</a></li>
-                   <li><a href="contacts.html">Contact us</a></li>
-               </ul>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bookTrips.html">Book a trip</a></li>
+                    <li><a href="myBookings.html">My Bookings</a></li>
+                    <li><a href="contacts.html">Contact us</a></li>
+                </ul>
             </nav>
-           </div>
+        </div>
     </header>
 
     <div class="background-image">
@@ -37,34 +39,46 @@
                 <div class="nameInp">
                     <i class="fa fa-user icon"></i>
                     <input type="text" placeholder="Full Name" name="name" id="name" required>
-        
+                    <span id="nameSpn"></span>
                 </div>
+
                 <div class="mailInp">
                     <i class="fa fa-envelope"></i>
-                    <input type="email" name="mail" id="mail" placeholder="Email" required>
+                    <input type="email" name="mail" id="email" placeholder="Email" required>
+                    <span id="emailAdressSpn"></span>
                 </div>
+
                 <div class="phoneInp">
                     <i class="fa-solid fa-phone"></i>
-                    <input type="number" name="phone" id="phone" placeholder="Phone" min="100000" max="9999999999" required>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone" required>
+                    <span id="phoneSpn"></span>
                 </div>
+
                 <div class="queryInp">
-                    <textarea name="query" id="query" cols="30" rows="5"
-                        placeholder="Your message..." ></textarea>
+                    <textarea name="query" id="query" cols="30" rows="5" placeholder="Your message..."></textarea>
+                    <span id="querySpn"></span>
+
                 </div>
                 <div class="submitBtn">
-                    <button id="btn" onclick="notif()">Send</button>
+                    <button id="btn" >Send</button>
                 </div>
+                
             </form>
             <p class="extra">Thank you for choosing us!</p>
         </div>
-        
     </div>
 
     <footer>
         <div class="footer-content">
             <p>&copy; 2023 Discover the wonders of the Ionian Coast</p>
             <p>All rights reserved</p>
-            </div>
+        </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/scripts/contacts.js"></script>
 </body>
+
 </html>

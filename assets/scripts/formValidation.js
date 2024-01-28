@@ -48,6 +48,7 @@ function validateAndSubmit(event){
             $("#phoneSpn").html("Enter 10-digit phone number");
             isValidated = false;
         }
+        
     if(numberOfAdults < 1){
         $("#noAdultsSpn").html("Enter at least 1 adult");;
         isValidated = false;
