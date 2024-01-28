@@ -4,13 +4,13 @@ function validateAndSubmit(event) {
     var isValidated = true;
 
     $("#nameSpn").html("");
-    $("#emailAdressSpn").html("");
-    $("#phoneSpn").html("");
+    $("emailAddressSpn").html("");
+    $("#phoneNumberSpn").html("");
     $("#querySpn").html("");
 
     const name = $("#name").val();
-    const emailAddress = $("#email").val();
-    const phoneNumber = $("#phone").val();
+    const emailAddress = $("#emailAddress").val();
+    const phoneNumber = $("#phoneNumber").val();
     const query = $("#query").val();
 
     if (name.length < 2) {
@@ -18,17 +18,18 @@ function validateAndSubmit(event) {
         isValidated = false;
     }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(emailAddress)) {
-        $("#emailAdressSpn").html("Enter a valid email address");
+    const emailAddressRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailAddressRegex.test(emailAddress)) {
+        $("emailAddressSpn").html("Enter a valid email address");
         isValidated = false;
     }
 
-    const phoneRegex = /^[0-9]{10}$/;
-    if (!phoneRegex.test(phoneNumber)) {
-        $("#phoneSpn").html("Enter 10-digit phone number");
-        isValidated = false;
-        }
+    const phoneNumberRegex = /^[0-9]{10}$/;
+    if (!phoneNumberRegex.test(phoneNumber)) {
+    $("#phoneNumberSpn").html("Enter 10-digit phone number");
+    isValidated = false;
+    }
+
 
     if (query.length < 2) {
         $("#querySpn").html("Query must contain at least 2 characters");
@@ -45,8 +46,8 @@ function validateAndSubmit(event) {
 function handleSubmit(_name, _email, _phone, _query) {
     var newContact = {
         name: _name,
-        email: _email,
-        phone: _phone,
+        emailAddress: _email,
+        phoneNumber: _phone,
         query: _query
     };
 
