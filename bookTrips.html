@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore The South Coast of Albania</title>
-    <link rel="stylesheet" href="./assets/styles/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explore The South Coast of Albania</title>
+        <link rel="stylesheet" href="./assets/styles/styles.css">
+    </head>
+    
 <body>
     <header>
         <div class="header-content">
@@ -26,72 +27,7 @@
     
     </header>
 
-    <div class="tour-cards">
-       
-        <div class="card">
-            <div class="tour-info">
-                <h2>Pirates' cave</h2>
-                <p>Meeting point: Hiamara's dock</p>
-                <p>We visit:Livadhi, Aquarium, Jala, Goats' bay, Couples' bay, Doves' cave, Gjipe canyon,
-                    Saint Theodore's cave, Pirates' cave
-                </p>
-                <p>Departure: Every day at 10:00, 11:00, 12:00, 13:00</p>
-                <p>Duration: 2 - 2.5 hours</p>
-                <p>Price: 25 euros</p>
-            </div>
-            <a class="book-now-button" href="bookForm.html?trip=Pirates%27+cave">Book Now</a>
-            </div>
-
-        <div class="card">
-            <div class="tour-info">
-                <h2>Karaburun peninsula</h2>
-                <p>Meeting point: Vlora's dock</p>
-                <p>We visit : Karaburun, Sazan island, the Haxhi Ali cave, Dafina's bay</p>
-                <p>Departure: Every day at 10:00, 11:00, 12:00, 13:00</p>
-                <p>Duration: 4 hours</p>
-                <p>Price: 50 euros</p>
-            </div>
-            <a class="book-now-button" href="bookForm.html?trip=Karaburun+peninsula">Book Now</a>
-            </div>
-
-        <div class="card">
-            <div class="tour-info">
-                <h2>Grama Bay</h2>
-                <p>Meeting point: Vlora's dock</p>
-                <p>We visit: Grama bay, St. Andreas bay,Inglezi bay, Nezhaj cave </p>
-                <p>Departure: Every day at 10:00, 11:00, 12:00, 13:00</p>
-                <p>Duration: 6 hours</p>
-                <p>70 euros</p>
-            </div>
-            <a class="book-now-button" href="bookForm.html?trip=Grama+Bay">Book Now</a>
-        </div>
-
-        <div class="card">
-            <div class="tour-info">
-                <h2>Saranda tour</h2>
-                <p>Meeting point: Saranda's dock</p>
-                <p>We visit: Mirrors' beach, Krorëz bay, Kakomë bay</p>
-                <p>Departure: Every day at 10:00, 11:00, 12:00, 13:00</p>
-                <p>Duration: 3.5 hours</p>
-                <p>Price: 40 euros</p>
-            </div>
-            <a class="book-now-button" href="bookForm.html?trip=Saranda+tour">Book Now</a>
-        </div>
-
-        <div class="card">
-            <div class="tour-info">
-                <h2>Tongo island</h2>
-                <p>Meeting point: Ksamil</p>
-                <p>We visit: Ali Pasha's castle, Mussel Farms, Blue pool, Tongo island, Ftelea beach,
-                   Emerald islands</p>
-                <p>Departure: Every day at 10:00, 11:00, 12:00, 13:00</p>
-                <p>Duration: 6 hours</p>
-                <p>Price: 70 euros</p>
-            </div>
-            <a class="book-now-button" href="bookForm.html?trip=Tongo+island">Book Now</a>   
-             </div>
-    </div>
-
+    <div id="tour-cards" class="tour-cards">
     
     <footer>
         <div class="footer-content">
@@ -99,5 +35,8 @@
         <p>All rights reserved</p>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/scripts/bookTrips.js"></script>
 </body>
 </html>
