@@ -26,13 +26,13 @@ $(document).ready(function () {
             const tourCard = `
                 <div class="card">
                     <div trip-id="${trip.id}" class="tour-info">
-                        <p>TripName: ${trip.tripName}</p>
-                        <p>MeetingPoint: ${trip.meetingPoint}</p>
-                        <p>WeVisit: ${trip.weVisit}</p>
+                        <h2>${trip.tripName}</h2>
+                        <p>Meeting point: ${trip.meetingPoint}</p>
+                        <p>We visit: ${trip.weVisit}</p>
                         <p>Departure: ${trip.departure}</p>
                         <p>Price: ${trip.price}</p>
+                        </div>
                         <button class="book-now-button" data-trip-name="${trip.tripName}">Book Now</button>
-                    </div>
                 </div>`;
             TourCards.append(tourCard);
         });
