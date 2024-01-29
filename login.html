@@ -18,25 +18,45 @@
                <ul>
                    <li><a href="index.html">Home</a></li>
                    <li><a href="bookTrips.html">Book a trip</a></li>
-                   <li><a href="login.html">Log Out</a></li>
                    <li><a href="contacts.html">Contact us</a></li>
                </ul>
             </nav>
            </div>
     </header>
-    
-      <div id="bookingsContainer"></div>
-      
+
+    <div class="background-image">
+            <div class="transparent-card">
+                <div class="tour-info">
+                    <h2>Log In</h2>
+                    <form id = "login-form">
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required>
+                            <span id="usernameSpn"></span>
+
+                        </div>
+                        
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="text" id="password" name="password" required>
+                            <span id="passwordSpn"></span>
+
+                        </div>
+                        <button id = "loginBtn">Log In</button>
+                        
+                    </form> 
+                </div>
+            </div>
+    </div>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2023 Discover the wonders of the Ionian Coast</p>
             <p>All rights reserved</p>
             </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/scripts/formValidation.js"></script>
-    <script src="assets/scripts/bookings.js"></script>
+    <script src="assets/scripts/login.js"></script>
 
 </body>
 </html>

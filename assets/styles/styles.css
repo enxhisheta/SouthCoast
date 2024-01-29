@@ -414,6 +414,38 @@ p {
 
 }
 
+
+#login-form {
+    margin-bottom: 5px;
+}
+
+
+#login-form label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+#login-form input, 
+#login-form select {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-form span{
+    width: 100%; 
+    padding: 10px;
+    color: red;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+#login-form div{
+    margin-bottom: 20px;
+
+}
+
 #bookBtn{
     background-color: #ff585f;
     color: #fff;
@@ -427,6 +459,38 @@ p {
 }
 
 #bookBtn:hover {
+    background:  #faa4a7;
+}
+
+#contactsBtn{
+    background-color: #ff585f;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: center;
+    transition:  background 0.3s ease-in-out;
+}
+
+#contactsBtn:hover {
+    background:  #faa4a7;
+}
+
+#loginBtn{
+    background-color: #ff585f;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: center;
+    transition:  background 0.3s ease-in-out;
+}
+
+#loginBtn:hover {
     background:  #faa4a7;
 }
 
@@ -479,4 +543,26 @@ p {
     border-radius: 4px;
 }
 
+textarea {
+    flex: 1;
+    padding: 8px;
+    width: 100%;
+}
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #000000;
+    text-align: left;
+}
+
+th {
+    background-color: #ece1e1;
+    color: rgb(0, 0, 0);
+}
