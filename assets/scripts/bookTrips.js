@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     function createTourCard() {
         const TourCards = $("#tour-cards");
-        TourCards.empty(); 
+        TourCards.empty();
 
         $.each(trips, function(index, trip) {
             console.log('trip = ', trip);
@@ -31,10 +31,17 @@ $(document).ready(function () {
                         <p>WeVisit: ${trip.weVisit}</p>
                         <p>Departure: ${trip.departure}</p>
                         <p>Price: ${trip.price}</p>
-                        <button class="book-now-button" href="bookForm.html?trip=${trip.tripName}">Book Now</button>
+                        <button class="book-now-button" data-trip-name="${trip.tripName}">Book Now</button>
                     </div>
                 </div>`;
             TourCards.append(tourCard);
         });
+
+        // Add click event listener for the "Book Now" button
+        $(".book-now-button").on("click", function() {
+            const tripName = $(this).data("trip-name");
+            window.location.href = `bookForm.html?trip=${tripName}`;
+        });
     }
 });
+
