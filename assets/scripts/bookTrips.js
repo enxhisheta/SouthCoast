@@ -30,6 +30,7 @@ $(document).ready(function () {
                         <p>Meeting point: ${trip.meetingPoint}</p>
                         <p>We visit: ${trip.weVisit}</p>
                         <p>Departure: ${trip.departure}</p>
+                        <p>Duration: ${trip.duration}</p>
                         <p>Price: ${trip.price}</p>
                         </div>
                         <button class="book-now-button" data-trip-name="${trip.tripName}">Book Now</button>
