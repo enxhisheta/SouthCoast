@@ -23,15 +23,15 @@ $(document).ready(function () {
 
     // Function to create booking cards
     function createBookingCard() {
-        $.each(bookings, function(index, booking){
+        $.each(bookings, function(index,booking){
             console.log('booking = ', booking);
                 const bookingCard = `
                 <div data-booking-id="${booking.id}" class="booking-card">
+                    <h4>${booking.tripName}</h4>
                     <p>Name: ${booking.name}</p>
                     <p>Surname: ${booking.surname}</p>
                     <p>Date: ${booking.bookingDate}</p>
-                    <p>Selected trip: ${booking.tripName}</p>
-                    <p>Departure Time: ${booking.departureTime}</p>
+                    <p>Departure time: ${booking.departureTime}</p>
                     <p>Email: ${booking.emailAddress}</p>
                     <p>Phone number: ${booking.phoneNumber}</p>
                     <p>Number of adults: ${booking.numberOfAdults}</p>
